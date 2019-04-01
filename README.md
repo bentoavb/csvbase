@@ -1,3 +1,9 @@
+# csvbase
+
+Csvbase is a simple database with csv files, created by Anderson Vítor Bento, undergraduated student of Mechatronics Engeneering in the Federal Center for Technological Education of Minas Gerais (CEFET-MG).
+
+## License
+
 MIT License
 
 Copyright (c) 2019 Anderson Vitor Bento
