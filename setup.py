@@ -27,7 +27,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name = 'csvbase',
-    version = '0.0.1',
+    version = '0.1.1',
     description = 'A simple database with csv files',
     author = 'Anderson Vitor Bento',
     author_email = 'bentoavb@gmail.com',
@@ -35,7 +35,6 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/bentoavb/csvbase",
     packages=setuptools.find_packages(),
-    #install_requires = ['csv','os','tempfile','shutil'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

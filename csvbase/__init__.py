@@ -27,7 +27,7 @@ import shutil
 
 class CSVbase():
 
-    def __init__(self, Path):
+    def __init__(self, Path = '.'):
         self.path = Path + '/'
         if not path.exists(self.path):
             print('\x1b[41m\x1b[37m', 'Database root folder not exists! Please create a folder named "' + Path + '"', '\x1b[0m')
