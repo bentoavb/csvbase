@@ -2,6 +2,10 @@
 
 Csvbase is a simple database with csv files, created by Anderson Vítor Bento, undergraduated student of Mechatronics Engeneering in the Federal Center for Technological Education of Minas Gerais (CEFET-MG).
 
+## Installation and Usage
+
+Use `pip install csvbase` or `pip3 install csvbase` to install. Learn how to use this package with these [examples](https://github.com/bentoavb/csvbase/tree/master/examples).
+
 ## License
 
 MIT License
