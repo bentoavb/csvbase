@@ -1,8 +1,12 @@
 from csvbase import CSVbase
 
-db = CSVbase("db")
+db = CSVbase()
+
+# create a file named exampleTable2.csv
 
 db.createTable('exampleTable2',['c1','c2','c3'])
+
+# insert data on the file exampleTable2.csv
 
 db.create('exampleTable2', {
     'c1': 'a',
@@ -17,6 +21,8 @@ db.create('exampleTable2', {
 })
 
 print('before update: ', db.read('exampleTable2'))
+
+# update data of the file exampleTable2.csv
 
 db.update('exampleTable2',{
     # condition for select a row for update

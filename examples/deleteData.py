@@ -1,8 +1,12 @@
 from csvbase import CSVbase
 
-db = CSVbase("db")
+db = CSVbase()
+
+# create a file named exampleTable3.csv
 
 db.createTable('exampleTable3',['c1','c2','c3'])
+
+# insert data on the file exampleTable3.csv
 
 db.create('exampleTable3', {
     'c1': 'x',
@@ -17,6 +21,8 @@ db.create('exampleTable3', {
 })
 
 print('before delete: ', db.read('exampleTable3'))
+
+# delete data of the file exampleTable3.csv
 
 db.delete('exampleTable3',{
     # condition for select a row for delete

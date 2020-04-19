@@ -1,8 +1,12 @@
 from csvbase import CSVbase
 
-db = CSVbase("db")
+db = CSVbase()
+
+# create a file named exampleTable1.csv
 
 db.createTable('exampleTable1',['c1','c2','c3'])
+
+# insert data on the file exampleTable1.csv
 
 db.create('exampleTable1', {
     'c1': '1',
@@ -16,13 +20,14 @@ db.create('exampleTable1', {
     'c3': '6'
 })
 
-readAll = db.read('exampleTable1')
+# read all data of the file exampleTable1.csv
 
+readAll = db.read('exampleTable1')
 print('read all: ', readAll)
 
-readWithCondition = db.read('exampleTable1',{
-    # condition for select a row for read
-    'c1': '4'
-})
+# read data with a condition 
 
+readWithCondition = db.read('exampleTable1',{
+    'c1': '4' # condition for select a row for read
+})
 print('read with condition:', readWithCondition)
