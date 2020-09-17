@@ -198,3 +198,19 @@ class CSVbase():
                 break
         
         return { 'fields': fields, 'fieldsDict': fieldsDict }
+
+    def readAll(self, table_name, type=None):
+        data = self.read(table_name)
+        fields = self.findFields(table_name)['fields']
+        s = dict()
+        for column in fields:
+            s[column] = []
+        for row in data:
+            for column in fields:
+                if type == float:
+                    s[column].append(float(row[column]))
+                elif type == int:
+                    s[column].append(int(float(row[column])))
+                else:
+                    s[column].append(row[column])
+        return s

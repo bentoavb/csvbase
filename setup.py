@@ -27,7 +27,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name = 'csvbase',
-    version = '0.1.1',
+    version = '0.2.0',
     description = 'A simple database with csv files',
     author = 'Anderson Vitor Bento',
     author_email = 'bentoavb@gmail.com',
